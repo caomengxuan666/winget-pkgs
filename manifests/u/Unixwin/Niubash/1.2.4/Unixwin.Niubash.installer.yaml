@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+PackageIdentifier: Unixwin.Niubash
+PackageVersion: 1.2.4
+InstallerType: inno
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/unixwin/niubash/releases/download/v1.2.4/niubash-v1.2.4-win-x64-setup.exe
+    InstallerSha256: 057AE181150D2DB5614DD7A42A5B472E9D80411501D8CD94F86F4FC318A2217E
+    InstallerSwitches:
+      Silent: /VERYSILENT /NORESTART
+      SilentWithProgress: /SILENT /NORESTART
+    Scope: user
+  - Architecture: arm64
+    InstallerUrl: https://github.com/unixwin/niubash/releases/download/v1.2.4/niubash-v1.2.4-win-arm64-setup.exe
+    InstallerSha256: DC0BEBCC8C738B653BBB38424D3F8E81A574A2F7ADA8C21E316F7018DCDFBB33
+    InstallerSwitches:
+      Silent: /VERYSILENT /NORESTART
+      SilentWithProgress: /SILENT /NORESTART
+    Scope: user
+ManifestType: installer
+ManifestVersion: 1.10.0
