@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+PackageIdentifier: Unixwin.Niubash
+PackageVersion: 1.3.0
+PackageLocale: en-US
+Publisher: Unixwin
+PublisherUrl: https://github.com/unixwin
+PublisherSupportUrl: https://github.com/unixwin/niubash/issues
+Author: unixwin team
+PackageName: Niubash
+PackageUrl: https://github.com/unixwin/niubash
+License: MIT
+LicenseUrl: https://github.com/unixwin/niubash/blob/master/LICENSE
+ShortDescription: AI-native Bash-compatible shell for Windows
+Description: >-
+  Niubash is a native Windows shell that runs Bash-compatible commands without
+  WSL or a virtual machine. It includes the rubash language engine, Unix
+  commands from WinuxCmd, a git-aware prompt, and a plugin system.
+Moniker: niu
+Tags:
+  - bash
+  - command-line
+  - shell
+  - terminal
+  - windows
+ReleaseNotes: |-
+  - Plugin system: declarative plugins.toml spec with sync/bootstrap/lockfile;
+    any git-hosted bash plugin or manager works (oh-my-bash, bash-it,
+    bash-completion, bpkg) through their native loaders
+  - niu no longer downloads anything except git clones (binary -16%); fonts
+    and executable tools become package-manager recommendations (wpm first
+    on Windows)
+  - Setup wizard: one-run out-of-box - pick a collection, trust it, and
+    choose a theme in a single run
+  - WinuxCmd 1.1.5 bundled: xargs stops option parsing at the utility name;
+    mv/mktemp/cp/ls accept POSIX drive-form operands; yes dies 141 on a
+    broken pipe like GNU coreutils
+  - TMPDIR child boundary fixed (Bun-compiled TUIs launch again)
+ReleaseNotesUrl: https://github.com/unixwin/niubash/releases/tag/v1.3.0
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
