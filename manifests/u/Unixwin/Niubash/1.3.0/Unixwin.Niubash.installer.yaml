@@ -12,7 +12,7 @@ Installers:
     Scope: user
   - Architecture: arm64
     InstallerUrl: https://github.com/unixwin/niubash/releases/download/v1.3.0/niubash-v1.3.0-win-arm64-setup.exe
-    InstallerSha256: 5700557572A1D2A5E35B8008E021F6B6F3BB657061E0FE5755E8E04C29CDF19F
+    InstallerSha256: D4B5343E06A96C06D0BCCEA73220B6B7148533CF9ABE9B460F5636AE798C43E7
     InstallerSwitches:
       Silent: /VERYSILENT /NORESTART
       SilentWithProgress: /SILENT /NORESTART
